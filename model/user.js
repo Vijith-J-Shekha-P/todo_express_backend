@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 const MONGO_DB_URL =
-  process.env.MONGO_URI ||
-  "mongodb+srv://vijithshekha:lucidatech@cluster0.a0mg6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+  process.env.MONGO_URI;
 mongoose
   .connect(MONGO_DB_URL, {
     useNewUrlParser: true,
